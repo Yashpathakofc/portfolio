@@ -22,7 +22,6 @@ const EmailSection = () => {
     const options = {
       // The method is POST because we are sending data.
       method: "POST",
-      // Tell the server we're sending JSON.
       headers: {
         "Content-Type": "application/json",
       },
