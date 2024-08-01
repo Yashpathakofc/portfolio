@@ -31,26 +31,18 @@ const TAB_DATA = [
       </ul>
     ),
   },
+  
   {
-    title: "Certifications",
-    id: "certifications",
-    content: (
-      <ul className="list-disc pl-2 ">
-        <li className="mt-1">Oracle Certified Generative AI Professional</li>
-        <li className="mt-1">Oracle Certified Data Management Associate</li>
-        <li className="mt-1">Oracle Certified AI foundation  Associate</li>
-        <li className="mt-1">PostMan API foundation student expert</li>
-      </ul>
-    ),
-  },
-  {
-    title: "Experience",
+    title: "Experience/Certification",
     id: "experience",
     content: (
       <ul className="list-disc pl-2 ">
         <li className="mt-1">HR analyst Intern: Tata 1mg Technologies</li>
         <li className="mt-1">Managed Network Expert :Chegg Inc</li>
-        <li className="mt-1">Artificial Intelligence Intern: CodeClause</li>
+        <li className="mt-1">Oracle Certified Generative AI Professional</li>
+        <li className="mt-1">Oracle Certified Data Management Associate</li>
+        <li className="mt-1">Oracle Certified AI foundation  Associate</li>
+        <li className="mt-1">PostMan API foundation student expert</li>
       </ul>
     ),
   },
@@ -101,13 +93,13 @@ const AboutSection = () => {
               {" "}
               Education{" "}
             </TabButton>
-            <TabButton
+            {/* <TabButton
               selectTab={() => handleTabChange("certifications")}
               active={tab === "certifications"}
             >
               {" "}
               Certifications{" "}
-            </TabButton>
+            </TabButton> */}
           </div>
           <div className="mt-8">
             {TAB_DATA.find((t) => t.id === tab).content}
